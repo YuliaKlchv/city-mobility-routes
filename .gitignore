@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+
+# Java / Maven
+/target
+*.class
+*.log
+*.iml
+
+# Node
+node_modules/
+dist/
+.angular/
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*
+
+# Docker
+*.pid
+
