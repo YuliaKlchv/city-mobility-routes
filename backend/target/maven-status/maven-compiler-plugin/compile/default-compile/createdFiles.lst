@@ -1,3 +1,4 @@
+com/example/backend/common/ApiExceptionHandler.class
 com/example/backend/BackendApplication.class
 com/example/backend/route/RouteRepository.class
 com/example/backend/route/RouteService.class

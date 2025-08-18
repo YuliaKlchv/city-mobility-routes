@@ -1,4 +1,5 @@
 /Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/BackendApplication.java
+/Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/common/ApiExceptionHandler.java
 /Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/config/CorsConfig.java
 /Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/hello/HelloController.java
 /Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/route/Route.java

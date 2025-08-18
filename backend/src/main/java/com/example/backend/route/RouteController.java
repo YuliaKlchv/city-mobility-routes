@@ -1,5 +1,6 @@
 package com.example.backend.route;
 
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -16,14 +17,18 @@ public class RouteController {
   public List<RouteDTO> all(@RequestParam(required = false)Boolean activeOnly) {
     return service.list(activeOnly); } // List all routes, optionally filtering by active status
 
+  @GetMapping("/search")
+  public List<RouteDTO> search(@RequestParam String q) {
+    return service.search(q);
+  }
   @PostMapping
-  public ResponseEntity<RouteDTO> create(@RequestBody @Validated RouteDTO dto) {
+  public ResponseEntity<RouteDTO> create(@RequestBody @Valid RouteDTO dto) {
     RouteDTO created = service.create(dto);
     return ResponseEntity.created(URI.create("/api/routes/" + created.id())).body(created);
   }
 
   @PutMapping("/{id}")
-  public RouteDTO update(@PathVariable Long id, @RequestBody @Validated RouteDTO dto) {
+  public RouteDTO update(@PathVariable Long id, @RequestBody @Valid RouteDTO dto) {
     return service.update(id, dto);
   }
 

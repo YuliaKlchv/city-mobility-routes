@@ -9,5 +9,6 @@ public interface RouteRepository extends JpaRepository<Route, Long> {
 
     // This method checks if a route with the given line number already exists, ignoring case sensitivity.
   List<Route> findByActiveTrue(); // through this method, we can retrieve only active routes
+  List<Route> findByLineNumberIgnoreCaseContainingOrNameIgnoreCaseContaining(String q1, String q2);
 
 }

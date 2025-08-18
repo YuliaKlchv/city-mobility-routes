@@ -18,6 +18,18 @@ public class RouteService {
             .map(this::toDTO).toList(); // Convert each Route entity to RouteDTO
   }
 
+  public List<RouteDTO> search(String query) {
+    String q = (query == null) ? "" : query.trim();
+    if (q.isEmpty()) {
+      return repo.findAll().stream().map(this::toDTO).toList();
+    }
+    return repo
+            .findByLineNumberIgnoreCaseContainingOrNameIgnoreCaseContaining(q, q)
+            .stream()
+            .map(this::toDTO)
+            .toList();
+  }
+
   public RouteDTO create(RouteDTO dto) {
     if (repo.existsByLineNumberIgnoreCase(dto.lineNumber()))
       throw new IllegalArgumentException("Line number already exists");
