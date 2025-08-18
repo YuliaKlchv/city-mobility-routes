@@ -21,4 +21,8 @@ export class RouteService {
   getRoutes(): Observable<Route[]> {
     return this.http.get<Route[]>(this.apiUrl);
   }
+  search(q: string): Observable<Route[]> { // Search for routes by query 
+    const url = `´${this.apiUrl}/search?q=${encodeURIComponent}`;
+    return this.http.get<Route[]>(url);
+  }
 }

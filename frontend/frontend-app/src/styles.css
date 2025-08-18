@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+/* Global styles */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Minimal custom tweaks */
+.app-card {
+  border-radius: .75rem;
+}
+.app-muted {
+  color: #6c757d;
+}
+.form-inline-gap > * {
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+}
