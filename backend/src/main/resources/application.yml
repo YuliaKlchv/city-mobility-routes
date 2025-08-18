@@ -8,7 +8,7 @@ spring:
     password: routes
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update    # Automatically update the database schema
     properties:
       hibernate:
         format_sql: true

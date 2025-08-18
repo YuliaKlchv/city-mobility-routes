@@ -1,2 +1,8 @@
 /Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/BackendApplication.java
+/Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/config/CorsConfig.java
 /Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/hello/HelloController.java
+/Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/route/Route.java
+/Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/route/RouteController.java
+/Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/route/RouteDTO.java
+/Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/route/RouteRepository.java
+/Users/yuliaklchv/code/city-mobility-routes/backend/src/main/java/com/example/backend/route/RouteService.java
