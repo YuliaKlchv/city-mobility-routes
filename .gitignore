@@ -23,3 +23,7 @@ dist/
 # Docker
 *.pid
 
+# Build
+target/
+dist/
+
